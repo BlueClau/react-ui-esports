@@ -1,9 +1,14 @@
-import './homePage.scss'
+import Navbar from "../../components/navbar/navbar";
+import "./homePage.scss";
 
-function HomePage(){
+function HomePage() {
   return (
-    <div className="mapHolder">Map Here</div>
-  )
+    <div className="home">
+      <div className="content">
+        <div className="mapHolder">Map Here</div>
+      </div>
+    </div>
+  );
 }
 
-export default HomePage
+export default HomePage;
