@@ -1,7 +1,5 @@
 import "./matches.scss";
 
-function MatchesPage() {
-  return <div className="matches">Matches</div>;
-}
+function MatchesPage() {}
 
 export default MatchesPage;

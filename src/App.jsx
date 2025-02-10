@@ -5,32 +5,41 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RegisterPage from "./routes/register/register";
 import ContactPage from "./routes/contact/contact";
 import MatchesPage from "./routes/matches/matches";
+import EsportsMatch from "./components/esportsMatch/esportsmatch";
+import { ErrorPage } from "./components/errors/errors";
+ErrorPage;
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
+      errorElement: <ErrorPage />, // Error handler for this route
       children: [
         {
           path: "/",
           element: <HomePage />,
+          errorElement: <ErrorPage />, // Error handler for this route
         },
         {
           path: "/login",
           element: <LoginPage />,
+          errorElement: <ErrorPage />, // Error handler for this route
         },
         {
           path: "/register",
           element: <RegisterPage />,
+          errorElement: <ErrorPage />,
         },
         {
           path: "/contact",
           element: <ContactPage />,
+          errorElement: <ErrorPage />,
         },
         {
           path: "/matches",
-          element: <MatchesPage />,
+          element: <EsportsMatch />,
+          errorElement: <ErrorPage />,
         },
       ],
     },

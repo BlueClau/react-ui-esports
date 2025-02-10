@@ -1,4 +1,3 @@
-import Navbar from "../../components/navbar/navbar";
 import "./homePage.scss";
 
 function HomePage() {
