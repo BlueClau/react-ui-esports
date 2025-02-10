@@ -14,17 +14,17 @@ function App() {
     {
       path: "/",
       element: <Layout />,
-      errorElement: <ErrorPage />, // Error handler for this route
+      errorElement: <ErrorPage />,
       children: [
         {
           path: "/",
           element: <HomePage />,
-          errorElement: <ErrorPage />, // Error handler for this route
+          errorElement: <ErrorPage />,
         },
         {
           path: "/login",
           element: <LoginPage />,
-          errorElement: <ErrorPage />, // Error handler for this route
+          errorElement: <ErrorPage />,
         },
         {
           path: "/register",
@@ -38,7 +38,7 @@ function App() {
         },
         {
           path: "/matches",
-          element: <EsportsMatch />,
+          element: <MatchesPage />,
           errorElement: <ErrorPage />,
         },
       ],

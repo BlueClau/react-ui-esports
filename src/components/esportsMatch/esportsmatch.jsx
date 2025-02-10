@@ -1,6 +1,6 @@
 import "./EsportsMatch.scss";
 
-function EsportsMatch() {
+const EsportsMatch = () => {
   return (
     <div className="match-container">
       <div className="match-header">
@@ -30,7 +30,7 @@ function EsportsMatch() {
       </div>
       <div className="match-details">
         <p>
-          <strong>Country:</strong> RO 🇷🇴
+          <strong>Country:</strong> RO
         </p>
         <p>
           <strong>Number of Matches:</strong> Best of 3
@@ -45,14 +45,76 @@ function EsportsMatch() {
           <strong>Game:</strong> Counter Strike
         </p>
         <div className="watch-live">
-          <span>Watch Live:</span>
-          <a href="#" className="watch-link">
-            🔗
-          </a>
+          <button href="" className="watch-link">
+            Watch Live
+          </button>
+        </div>
+      </div>
+      <div className="lineups">
+        <h2>Lineups</h2>
+        <div className="team-lineup">
+          <h3>Natus Vincere (NaVi)</h3>
+          <div className="players">
+            <div className="player">
+              <img src="./player.png" alt="Player 1" />
+              <p>Player 1</p>
+              <p>🇺🇦</p>
+            </div>
+            <div className="player">
+              <img src="./player2.png" alt="Player 2" />
+              <p>Player 2</p>
+              <p>🇷🇺</p>
+            </div>
+            <div className="player">
+              <img src="./player3.png" alt="Player 3" />
+              <p>Player 3</p>
+              <p>🇺🇦</p>
+            </div>
+            <div className="player">
+              <img src="./player4.png" alt="Player 4" />
+              <p>Player 4</p>
+              <p>🇷🇺</p>
+            </div>
+            <div className="player">
+              <img src="./player5.png" alt="Player 5" />
+              <p>Player 5</p>
+              <p>🇺🇦</p>
+            </div>
+          </div>
+        </div>
+        <div className="team-lineup">
+          <h3>Team Liquid (TLiQ)</h3>
+          <div className="players">
+            <div className="player">
+              <img src="./player5.png" alt="Player 1" />
+              <p>Player 1</p>
+              <p>🇺🇸</p>
+            </div>
+            <div className="player">
+              <img src="./player3.png" alt="Player 2" />
+              <p>Player 2</p>
+              <p>🇨🇦</p>
+            </div>
+            <div className="player">
+              <img src="./player2.png" alt="Player 3" />
+              <p>Player 3</p>
+              <p>🇳🇱</p>
+            </div>
+            <div className="player">
+              <img src="./player.png" alt="Player 4" />
+              <p>Player 4</p>
+              <p>🇧🇷</p>
+            </div>
+            <div className="player">
+              <img src="./player4.png" alt="Player 5" />
+              <p>Player 5</p>
+              <p>🇺🇸</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default EsportsMatch;

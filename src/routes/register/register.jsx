@@ -6,7 +6,7 @@ function RegisterPage() {
       <h1>Register</h1>
       <form>
         <input required type="text" placeholder="username" name="username" />
-        <input required type="email" placeholder="email" name="email" />
+        <input required type="text" placeholder="full name" name="name" />
         <input
           required
           type="password"

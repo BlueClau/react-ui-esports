@@ -1,63 +1,126 @@
-.match-container {
-  background: #1b8c3b;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
+.banners-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  max-height: 90vh;
+}
+
+.match-banner {
+  background-color: #01b957;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  max-width: 800px;
-  margin: auto;
+  position: relative;
+  width: 100%;
+}
+
+.match-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.match-banner:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.see-more {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #64c88f;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.see-more:hover {
+  background-color: #0ccf81;
 }
 
 .match-header {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.match-teams {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-}
-
-.team {
-  text-align: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .team-logo {
-  width: 80px;
-  height: 80px;
+  width: 45px;
+  align-items: center;
+  height: 45px;
 }
 
-.league-logo img {
-  width: 100px;
+.match-date {
+  font-size: 14px;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
 }
 
-.match-details {
-  margin-top: 20px;
-  background: #104e26;
-  padding: 10px;
-  border-radius: 5px;
+.match-info {
+  text-align: center;
+  align-items: center;
+  width: 100%;
 }
 
-.prize {
-  font-size: 20px;
-  color: #00ff00;
+.team-names {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -45px;
+  gap: 3px;
+  font-size: 14px;
   font-weight: bold;
 }
 
-.watch-live {
-  display: flex;
+.team-name {
+  background: rgba(255, 255, 255, 0.11);
+  padding: 3px;
   align-items: center;
-  justify-content: center;
-  margin-top: 10px;
+  border-radius: 9px;
+  display: inline-block;
+  max-width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  color: #ffd700;
 }
 
-.watch-link {
-  text-decoration: none;
-  background: white;
-  color: #1b8c3b;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-left: 5px;
+.game-name {
+  margin-top: 20px;
+  font-size: 14px;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}
+
+.country {
+  color: #77ff77;
+  align-items: center;
+  font-size: 12px;
+}
+
+.league-logo {
+  align-items: center;
+  width: 70px;
+  height: auto;
+}
+
+.favorite {
+  position: absolute;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
 }
