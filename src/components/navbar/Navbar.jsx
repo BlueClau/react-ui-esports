@@ -12,7 +12,7 @@ function Navbar() {
         </a>
         <a href="/">Home</a>
         <a href="/contact">Contact</a>
-        <a href="/esportsmatch">Matches</a>
+        <a href="/matches">Matches</a>
       </div>
 
       <div className="right">
